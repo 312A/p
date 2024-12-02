@@ -1,0 +1,64 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styling */
+.header {
+    background-color: rgb(243, 233, 233);
+    box-shadow: 10px 5px 5px rgb(233, 224, 224);
+    padding: 10px 20px;
+}
+
+/* Container Flexbox */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 2px 60px; */
+}
+
+/* Left Section Styling */
+.left {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: auto; 
+}
+
+/* Right Section and Navbar */
+.right {
+    display: flex;
+    margin:auto;
+}
+
+.navbar {
+    display: flex;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px; /* Adds spacing between navigation items */
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav-items a:hover {
+    color: #007BFF;
+}
+
+.herosection{
+    margin:2px 60px;
+}
