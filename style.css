@@ -6,8 +6,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    max-width: 1100px;
+
+    margin: 0 auto;
+    width: 100%;
+    font-size: 1.05em;
+    line-height: 1.5;
+    color: #444;
 }
+
 
 /* Header Styling */
 .header {
@@ -18,21 +25,30 @@ body {
 
 /* Container Flexbox */
 .container {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* margin: 2px 60px; */
 }
-
+.hero{
+    display: flex;
+    justify-content: space-between;
+}
 /* Left Section Styling */
-.left {
+.left-portion{
+    width: 50%;
+    /* border:1px solid red; */
+    margin-top: 2px;
     font-size: 24px;
     font-weight: bold;
-    margin-right: auto; 
+    /* margin-right: auto;  */
 }
 
 /* Right Section and Navbar */
-.right {
+.right-portion {
+    width: 50%;
+    /* border: 1px solid red; */
     display: flex;
     margin:auto;
 }
@@ -61,4 +77,11 @@ body {
 
 .herosection{
     margin:2px 60px;
+}
+.img{
+    width: 200px; /* Ensure the image remains a square */
+    height: 200px; /* Match the width to maintain the aspect ratio */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the circle without distortion */
+    /* border: 2px solid #333 */
 }
